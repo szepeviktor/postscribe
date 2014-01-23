@@ -15,17 +15,16 @@
 }(this, function (htmlParser) {
     var global = this,
 
-    // Debug write tasks.
-    DEBUG = true,
+        // Debug write tasks.
+        DEBUG = true,
 
-    // Turn on to debug how each chunk affected the DOM.
-    DEBUG_CHUNK = false,
+        // Turn on to debug how each chunk affected the DOM.
+        DEBUG_CHUNK = false,
 
-    // # Helper Functions
+        // # Helper Functions
+        slice = Array.prototype.slice,
 
-    slice = Array.prototype.slice,
-
-    WriteStream;
+        WriteStream;
 
     if (global.postscribe) {
         return;
